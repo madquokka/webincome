@@ -1,61 +1,111 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Simple Loan Calculator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main class="container">
-        <h1>LOAN CALCULATOR</h1>
-        <table class="table">
-            <tbody>
-              <tr>
-                <th scope="row">LOAN</th>
-                <td>
-                    <input type="text" id="loan" /> $
-                </td>
-                <td>
-                    <button type="button" id="loan-100">$100</button>
-                    <button type="button" id="loan-1000">$1,000</button>
-                    <button type="button" id="loan-1000000">$100,000</button>
+      <h1>LOAN CALCULATOR</h1>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">LOAN</th>
+            <td><input type="text" id="loan" /> $</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="loan-100"
+              >
+                $100
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="loan-1000"
+              >
+                $1,000
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="loan-1000000"
+              >
+                $100,000
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">LOAN RATE</th>
+            <td><input type="text" id="interest" /> % (YEARLY)</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="interest-3"
+              >
+                3%
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="interest-4"
+              >
+                4%
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="interest-5"
+              >
+                5%
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">LOAN PERIOD</th>
+            <td><input type="text" id="period" /> MONTH</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="period-1"
+              >
+                1 year
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="period-2"
+              >
+                2 year
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="period-3"
+              >
+                3 year
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">LOAN RATE</th>
-                <td>
-                    <input type="text" id="interest" /> % (YEARLY)
-                </td>
-                <td>
-                    <button type="button" id="interest-3">3%</button>
-                    <button type="button" id="interest-4">4%</button>
-                    <button type="button" id="interest-5">5%</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">LOAN PERIOD</th>
-                <td>
-                    <input type="text" id="period" /> MONTH
-                </td>
-                <td>
-                    <button type="button" id="period-1">1 year</button>
-                    <button type="button" id="period-2">2 year</button>
-                    <button type="button" id="period-3">3 year</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <button tye="button" id="calculate">Calculate</button>
 
-          <button tye="button" id="calculate">Calculate</button>
-
-          <div id="result"></div>
+      <div id="result"></div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
